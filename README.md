@@ -1,7 +1,7 @@
 # OlChat
 Android chat Application for old people
 
-Baptiste est Blanc, Ludo est noir, Fawzi est Arabe. Qui est l'intru
+Baptiste est Blanc, Ludo est noir, Fawzi est Arabe. Qui est l'intru?
 
 
 
