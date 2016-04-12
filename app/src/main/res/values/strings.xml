@@ -3,4 +3,5 @@
     <string name="username">Write your username here</string>
     <string name="password">Write your password here</string>
     <string name="login_button">Click here to login</string>
+    <string name="search">Search...</string>
 </resources>
