@@ -3,5 +3,9 @@
     <string name="username">Write your username here</string>
     <string name="password">Write your password here</string>
     <string name="login_button">Click here to login</string>
+    <string name="signup_button">Create an account here</string>
     <string name="search">Search...</string>
+    <string name="login_wechat">Wechat</string>
+    <string name="login_facebook">Facebook</string>
+    <string name="login_google">Google</string>
 </resources>

@@ -4,12 +4,10 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:weightSum="1"
-    android:background="#ea5d5d5d"
-    android:baselineAligned="false"
-    android:orientation="vertical">
+    android:background="#ea5d5d5d">
     <TextView
-        android:layout_marginTop="15dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/app_name"
@@ -22,8 +20,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:weightSum="1"
-    android:layout_marginTop="100dp">
+    android:weightSum="1">
         <EditText
             android:layout_gravity="center"
             android:inputType="text"
