@@ -59,7 +59,8 @@
                 android:textColor="@color/accent_material_light"
                 android:layout_marginTop="15dp"
                 android:id="@+id/signIn"
-                android:layout_marginRight="5dp"/>
+                android:layout_marginRight="5dp"
+                android:onClick="signIn" />
 
             <Button
                 android:layout_marginLeft="5dp"
@@ -71,7 +72,8 @@
                 android:outlineProvider="background"
                 android:textColor="@color/accent_material_light"
                 android:layout_marginTop="15dp"
-                android:id="@+id/signUp" />
+                android:id="@+id/signUp"
+                android:onClick="signUp" />
         </LinearLayout>
 
         <LinearLayout

@@ -1,9 +1,15 @@
 <resources>
     <string name="app_name">Ol\'Chat</string>
+
+    <string name="title_activity_signup">Sign Up</string>
+    <string name="title_activity_signin">Sign In</string>
+
     <string name="username">Write your username here</string>
     <string name="password">Write your password here</string>
+
     <string name="login_button">Click here to login</string>
     <string name="signup_button">Create an account here</string>
+    <string name="passwordAgain">Write your password again</string>
     <string name="search">Search...</string>
     <string name="login_wechat">Wechat</string>
     <string name="login_facebook">Facebook</string>
