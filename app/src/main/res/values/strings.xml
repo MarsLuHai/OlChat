@@ -4,9 +4,15 @@
     <string name="title_activity_signup">Sign Up</string>
     <string name="title_activity_signin">Sign In</string>
 
-    <string name="username">Write your username here</string>
-    <string name="password">Write your password here</string>
+    <string name="username_hint">Write your username here</string>
+    <string name="password_hint">Write your password here</string>
+    <string name="new_password_hint">Write your new password here</string>
 
+    <string name="username">Username</string>
+
+    <string name="change_profile_picture">Change your profile picture</string>
+    <string name="change_username">Click to change your Username</string>
+    <string name="change_password">Click to change your password</string>
     <string name="login_button">Click here to login</string>
     <string name="signup_button">Create an account here</string>
     <string name="passwordAgain">Write your password again</string>
