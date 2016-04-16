@@ -4,6 +4,10 @@
     <string name="title_activity_signup">Sign Up</string>
     <string name="title_activity_signin">Sign In</string>
 
+    <string name="CONTACT_LIST">CONTACT LIST</string>
+    <string name="Search...">Search...</string>
+    <string name="Add_contact">Add contact</string>
+
     <string name="username">Write your username here</string>
     <string name="password">Write your password here</string>
 
