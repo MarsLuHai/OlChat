@@ -15,9 +15,16 @@
     <string name="change_password">Click to change your password</string>
     <string name="login_button">Click here to login</string>
     <string name="signup_button">Create an account here</string>
+    <string name="password">Write your password</string>
     <string name="passwordAgain">Write your password again</string>
-    <string name="search">Search...</string>
+    <string name="search">Search&#8230;</string>
     <string name="login_wechat">Wechat</string>
     <string name="login_facebook">Facebook</string>
     <string name="login_google">Google</string>
+
+    <string name="calling">Calling&#8230;</string>
+    <string name="video_call_button">VIDEO CALL</string>
+    <string name="hang_up_button">HANG UP</string>
+    <string name="picture_desc">Picture of the contact</string>
+
 </resources>
