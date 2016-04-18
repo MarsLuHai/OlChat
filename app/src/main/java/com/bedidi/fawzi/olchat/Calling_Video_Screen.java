@@ -15,7 +15,7 @@ public class Calling_Video_Screen extends AppCompatActivity {
         setContentView(R.layout.activity_calling_video_screen);
     }
 
-    public void HangUp(View view)
+    public void hangUp(View view)
     {
         Intent ContactPage = new Intent(getApplicationContext(), Contact_page.class);
         startActivity(ContactPage);
