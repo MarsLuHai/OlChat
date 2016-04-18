@@ -34,5 +34,12 @@
     <string name="video_call_button">VIDEO CALL</string>
     <string name="hang_up_button">HANG UP</string>
     <string name="picture_desc">Picture of the contact</string>
+    <string name="id_ol_apos_chat">ID Ol'Chat</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="search_on_phonebook">search on PhoneBook</string>
+    <string name="search_on_wechat">Search on Wechat</string>
+    <string name="search_on_google">Search on Google</string>
+    <string name="search_on_facebook">Search on Facebook</string>
+    <string name="chatting_with">Chatting with</string>
 
 </resources>
