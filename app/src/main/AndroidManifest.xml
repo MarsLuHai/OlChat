@@ -18,6 +18,8 @@
         <activity android:name=".Contact_page" />
         <activity android:name=".SignUp" />
         <activity android:name=".ProfilPage"/>
+        <activity android:name=".Calling_Screen"/>
+        <activity android:name=".Calling_Video_Screen"/>
     </application>
 
 </manifest>
