@@ -60,90 +60,34 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageView"
-        android:minHeight="150dp"
-        android:minWidth="150dp"
-        android:nestedScrollingEnabled="true"
-        android:layout_below="@+id/add_contact_button"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="28dp"
-        android:background="@color/colorPrimaryDark" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/imageView2"
         android:minHeight="150dp"
         android:minWidth="150dp"
         android:nestedScrollingEnabled="true"
         android:background="@color/colorPrimaryDark"
-        android:layout_alignTop="@+id/imageView"
-        android:layout_alignEnd="@+id/add_contact_button" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView3"
-        android:minHeight="30dp"
-        android:minWidth="70dp"
-        android:nestedScrollingEnabled="true"
-        android:background="@android:color/holo_red_dark"
-        android:layout_below="@+id/imageView"
+        android:layout_below="@+id/add_contact_button"
         android:layout_alignParentStart="true" />
 
-    <ImageView
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageView4"
-        android:minHeight="30dp"
-        android:minWidth="70dp"
-        android:nestedScrollingEnabled="true"
-        android:background="@android:color/holo_green_dark"
-        android:layout_below="@+id/imageView"
-        android:layout_alignEnd="@+id/imageView" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView5"
-        android:minHeight="30dp"
-        android:minWidth="70dp"
-        android:nestedScrollingEnabled="true"
-        android:background="@android:color/holo_red_dark"
+        android:text="@string/call_button"
+        android:id="@+id/call_button"
         android:layout_below="@+id/imageView2"
-        android:layout_alignStart="@+id/imageView2" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView6"
+        android:layout_alignParentStart="true"
         android:minHeight="30dp"
         android:minWidth="70dp"
-        android:nestedScrollingEnabled="true"
+        android:background="@android:color/holo_red_dark" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/message_button"
+        android:minHeight="30dp"
+        android:minWidth="70dp"
+        android:layout_alignTop="@+id/call_button"
+        android:layout_alignEnd="@+id/imageView2"
         android:background="@android:color/holo_green_dark"
-        android:layout_below="@+id/imageView2"
-        android:layout_alignParentEnd="true" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView7"
-        android:minHeight="150dp"
-        android:minWidth="150dp"
-        android:nestedScrollingEnabled="true"
-        android:background="@color/colorPrimaryDark"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView8"
-        android:minHeight="150dp"
-        android:minWidth="150dp"
-        android:nestedScrollingEnabled="true"
-        android:background="@color/colorPrimaryDark"
-        android:layout_alignTop="@+id/imageView7"
-        android:layout_alignParentEnd="true" />
+        android:id="@+id/message_button" />
 
 </RelativeLayout>
