@@ -11,6 +11,9 @@
     <string name="CONTACT_LIST">CONTACT LIST</string>
     <string name="Search...">Search...</string>
     <string name="Add_contact">Add contact</string>
+    <string name="call_button">CALL</string>
+    <string name="message_button">TEXT</string>
+
 
 
     <string name="username">Username</string>
