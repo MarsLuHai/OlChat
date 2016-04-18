@@ -8,6 +8,11 @@
     <string name="password_hint">Write your password here</string>
     <string name="new_password_hint">Write your new password here</string>
 
+    <string name="CONTACT_LIST">CONTACT LIST</string>
+    <string name="Search...">Search...</string>
+    <string name="Add_contact">Add contact</string>
+
+
     <string name="username">Username</string>
 
     <string name="change_profile_picture">Change your profile picture</string>
