@@ -15,13 +15,6 @@
             android:layout_height="wrap_content"
             android:layout_gravity="right">
 
-            <TextView
-                android:layout_width="201dp"
-                android:layout_height="match_parent"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="@string/chatting_with"
-                android:id="@+id/message_to" />
-
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

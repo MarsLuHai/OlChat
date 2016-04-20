@@ -55,7 +55,8 @@
         android:text="@string/Add_contact"
         android:id="@+id/add_contact_button"
         android:layout_below="@+id/plus_button"
-        android:layout_toEndOf="@+id/search_bar" />
+        android:layout_toEndOf="@+id/search_bar"
+        android:onClick="addContactOnClick" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -77,7 +78,8 @@
         android:layout_alignParentStart="true"
         android:minHeight="30dp"
         android:minWidth="70dp"
-        android:background="@android:color/holo_red_dark" />
+        android:background="@android:color/holo_red_dark"
+        android:onClick="callOnClick" />
 
     <Button
         android:layout_width="wrap_content"
@@ -88,6 +90,7 @@
         android:layout_alignTop="@+id/call_button"
         android:layout_alignEnd="@+id/contact_image1"
         android:background="@android:color/holo_green_dark"
-        android:id="@+id/message_button" />
+        android:id="@+id/message_button"
+        android:onClick="textOnClick" />
 
 </RelativeLayout>

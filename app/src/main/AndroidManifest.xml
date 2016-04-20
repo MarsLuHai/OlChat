@@ -17,9 +17,11 @@
         </activity>
         <activity android:name=".Contact_page" />
         <activity android:name=".SignUp" />
-        <activity android:name=".ProfilPage"/>
-        <activity android:name=".Calling_Screen"/>
-        <activity android:name=".Calling_Video_Screen"/>
+        <activity android:name=".ProfilPage" />
+        <activity android:name=".Calling_Screen" />
+        <activity android:name=".Calling_Video_Screen" />
+        <activity android:name=".Add_contact" />
+        <activity android:name=".Messaging_page" />
     </application>
 
 </manifest>
