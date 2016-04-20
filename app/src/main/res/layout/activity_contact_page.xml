@@ -57,6 +57,17 @@
         android:layout_below="@+id/plus_button"
         android:layout_toEndOf="@+id/search_bar" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/message_button"
+        android:minHeight="30dp"
+        android:minWidth="70dp"
+        android:layout_alignTop="@+id/call_button"
+        android:layout_alignEnd="@+id/imageView2"
+        android:background="@android:color/holo_green_dark"
+        android:id="@+id/message_button" />
+
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -78,16 +89,5 @@
         android:minHeight="30dp"
         android:minWidth="70dp"
         android:background="@android:color/holo_red_dark" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/message_button"
-        android:minHeight="30dp"
-        android:minWidth="70dp"
-        android:layout_alignTop="@+id/call_button"
-        android:layout_alignEnd="@+id/imageView2"
-        android:background="@android:color/holo_green_dark"
-        android:id="@+id/message_button" />
 
 </RelativeLayout>

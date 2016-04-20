@@ -32,7 +32,7 @@ public class SignUp extends AppCompatActivity {
         usernameEditText.setText(message);
     }
 
-    protected void signUp(View view){
+    public void signUp(View view){
         final Intent i = new Intent(SignUp.this, MainActivity.class);
         if (usernameEditText.getText().length() >= 1
                 && password2EditText.getText().toString().equalsIgnoreCase(passwordEditText.getText().toString())

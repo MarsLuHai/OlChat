@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    protected void signIn(View view){
+    public void signIn(View view){
         final Intent intent = getIntent();
         final String username = usernameEditText.getText().toString();
         final String password = passwordEditText.getText().toString();
@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    protected void signUp(View view){
+    public void signUp(View view){
         Intent i=new Intent(MainActivity.this, SignUp.class);
 
         if (usernameEditText.getText().length() >= 1){
