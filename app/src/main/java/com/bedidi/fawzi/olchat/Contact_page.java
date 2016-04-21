@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
+import android.widget.GridView;
 
 public class Contact_page extends AppCompatActivity {
 
@@ -12,8 +13,10 @@ public class Contact_page extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-
         setContentView(R.layout.activity_contact_page);
+        GridView gridView = (GridView) findViewById(R.id.gridView);
+        // Instance of ImageAdapter Class
+        gridView.setAdapter(new ImageAdapter(this));
     }
 
     public void addContactOnClick(View view){
