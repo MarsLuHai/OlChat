@@ -2,13 +2,12 @@ package com.bedidi.fawzi.olchat;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
 public class Settings extends AppCompatActivity {
-    public SeekBar Font_size;
-    public TextView seekBarValue;
+    private SeekBar Font_size;
+    private TextView seekBarValue;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

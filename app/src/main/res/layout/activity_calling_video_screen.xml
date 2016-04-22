@@ -19,7 +19,6 @@
     <VideoView
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:id="@+id/videoViewSelf"
         android:layout_alignBottom="@+id/videoViewContact"
         android:layout_alignEnd="@+id/videoViewContact" />
 
@@ -27,7 +26,6 @@
         android:layout_width="200dp"
         android:layout_height="100dp"
         android:text="@string/hang_up_button"
-        android:id="@+id/buttonVideoCallHangUp"
         android:layout_alignBottom="@+id/videoViewContact"
         android:onClick="hangUp"/>
 </RelativeLayout>

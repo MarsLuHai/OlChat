@@ -1,13 +1,10 @@
 package com.bedidi.fawzi.olchat;
 
-import android.app.AlertDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.view.Window;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -17,8 +14,8 @@ public class SignUp extends AppCompatActivity {
     private EditText passwordEditText;
     private EditText password2EditText;
 
-    public final static String USERNAME_CREATED = "com.bedidi.fawzi.olchat.USERNAME";
-    public final static String PASSWORD_CREATED = "com.bedidi.fawzi.olchat.USERNAME";
+    private final static String USERNAME_CREATED = "com.bedidi.fawzi.olchat.USERNAME";
+    private final static String PASSWORD_CREATED = "com.bedidi.fawzi.olchat.USERNAME";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +29,7 @@ public class SignUp extends AppCompatActivity {
         usernameEditText.setText(message);
     }
 
-    public void signUp(View view){
+    public void signUp(){
         final Intent i = new Intent(SignUp.this, MainActivity.class);
         if (usernameEditText.getText().length() >= 1
                 && password2EditText.getText().toString().equalsIgnoreCase(passwordEditText.getText().toString())
@@ -58,5 +55,8 @@ public class SignUp extends AppCompatActivity {
             Toast toast = Toast.makeText(context, text, duration);
             toast.show();
         }
+    }
+
+    public void signUp(View view) {
     }
 }

@@ -1,6 +1,5 @@
 package com.bedidi.fawzi.olchat;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -8,13 +7,11 @@ import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.widget.EditText;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
 
     private EditText usernameEditText;
-    private EditText passwordEditText;
     public final static String EXTRA_MESSAGE = "com.bedidi.fawzi.olchat.USERNAME";
 
 
@@ -25,11 +22,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         usernameEditText = (EditText) findViewById(R.id.username);
-        passwordEditText = (EditText) findViewById(R.id.password);
+        EditText passwordEditText = (EditText) findViewById(R.id.password);
 
     }
 
-    public void signIn(View view){
+    public void signIn(){
         final Intent intent = getIntent();
         /*final String username = usernameEditText.getText().toString();
         final String password = passwordEditText.getText().toString();
@@ -47,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         }*/
     }
 
-    public void signUp(View view){
+    public void signUp(){
         Intent i=new Intent(MainActivity.this, SignUp.class);
 
         if (usernameEditText.getText().length() >= 1){
@@ -55,5 +52,11 @@ public class MainActivity extends AppCompatActivity {
             Log.i("Main Activity","Username sent to the Signup activity");
         }
         startActivity(i);
+    }
+
+    public void signIn(View view) {
+    }
+
+    public void signUp(View view) {
     }
 }

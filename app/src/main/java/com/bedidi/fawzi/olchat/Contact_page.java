@@ -16,24 +16,37 @@ public class Contact_page extends AppCompatActivity {
         setContentView(R.layout.activity_contact_page);
         GridView gridView = (GridView) findViewById(R.id.gridView);
         // Instance of ImageAdapter Class
+        assert gridView != null;
         gridView.setAdapter(new ImageAdapter(this));
     }
 
-    public void textOnClick(View view){
+    public void textOnClick(){
         final Intent i = new Intent(Contact_page.this, Messaging_page.class);
         startActivity(i);
     }
 
-    /*public void addContactOnClick(View view){
-        final Intent i = new Intent(Contact_page.this, Add_contact.class);
+    public void addContactOnClick(){
+        final Intent i = new Intent(Contact_page.this, add_contact.class);
             startActivity(i);
     }
 
-    public void callOnClick(View view){
+    public void callOnClick(){
         final Intent i = new Intent(Contact_page.this, Calling_Screen.class);
         startActivity(i);
-    }*/
+    }
 
-    public void increaseOnClick(View view){
+    public void increaseOnClick(){
+    }
+
+    public void callOnClick(View view) {
+    }
+
+    public void increaseOnClick(View view) {
+    }
+
+    public void textOnClick(View view) {
+    }
+
+    public void addContactOnClick(View view) {
     }
 }

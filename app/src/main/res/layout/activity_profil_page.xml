@@ -5,20 +5,14 @@
     android:orientation="vertical"
     android:background="#ea5d5d5d">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/back"
-        android:src="@drawable/ic_chevron_left_black_24dp" />
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <ImageView
+            android:contentDescription="@string/contact_picture"
             android:layout_width="89dp"
             android:layout_height="89dp"
-            android:id="@+id/profile_pitcure"
             android:minHeight="150dp"
             android:minWidth="150dp"
             android:src="@drawable/ic_account_circle_black_24dp" />
@@ -26,8 +20,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="@string/change_profile_picture"
-            android:id="@+id/changeprofilePicture" />
+            android:text="@string/change_profile_picture" />
 
     </LinearLayout>
 
@@ -45,16 +38,15 @@
             android:layout_marginBottom="10dp"
             />
         <ImageView
+            android:contentDescription="@string/clear_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/clear"
             android:src="@drawable/ic_cancel_black_24dp"
             android:layout_gravity="center_vertical" />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/change_username"
-            android:id="@+id/changeUsername" />
+            android:text="@string/change_username" />
     </LinearLayout>
 
     <LinearLayout
@@ -70,20 +62,19 @@
             android:id="@+id/password"
             android:hint="@string/new_password_hint"
             android:layout_marginBottom="10dp"
-            android:textSize="10dp" />
+            android:textSize="12sp" />
 
         <ImageView
+            android:contentDescription="@string/clear_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/imageView"
             android:src="@drawable/ic_cancel_black_24dp"
             android:layout_gravity="center_vertical" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/change_password"
-            android:id="@+id/changePassword" />
+            android:text="@string/change_password" />
     </LinearLayout>
 
 </LinearLayout>

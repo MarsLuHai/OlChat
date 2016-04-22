@@ -7,9 +7,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Add Contact"
-        android:id="@+id/AddContactText"
-        android:layout_gravity="center_horizontal" />
+        android:text="@string/Add_contact"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/page_header" />
 
     <LinearLayout
         android:orientation="vertical"
@@ -20,7 +20,7 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="81dp"
+            android:layout_height="wrap_content"
             android:layout_weight="0.04">
 
             <TextView
@@ -28,22 +28,21 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="@string/phone_number"
-                android:id="@+id/pn_input"
                 android:layout_weight="0.07" />
 
             <EditText
-                android:hint="enter phone number"
+                android:hint="@string/enter_phone_number"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/phone_search_input"
-                android:layout_weight="0.99" />
+                android:layout_weight="0.99"
+                android:id="@+id/enter_phone" />
 
             <Button
                 style="?android:attr/buttonStyleSmall"
-                android:layout_width="59dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/phone_search"
-                android:background="@android:drawable/ic_search_category_default" />
+                android:background="@android:drawable/ic_search_category_default"
+                android:id="@+id/phone_search" />
 
         </LinearLayout>
 
@@ -56,20 +55,19 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="@string/id_ol_apos_chat"
-                android:id="@+id/id_input"
+                android:text="@string/id_ol_app_chat"
                 android:layout_weight="0.40" />
 
             <EditText
                 android:layout_width="wrap_content"
-                android:hint="enter ol'chat ID"
+                android:hint="@string/enter_olchat_ID"
                 android:layout_height="wrap_content"
-                android:id="@+id/id_search_input"
-                android:layout_weight="0.74" />
+                android:layout_weight="0.74"
+                android:id="@+id/enter_id" />
 
             <Button
                 style="?android:attr/buttonStyleSmall"
-                android:layout_width="59dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@android:drawable/ic_search_category_default"
                 android:id="@+id/id_search" />
@@ -85,13 +83,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/search_on_phonebook"
-                android:id="@+id/phonebook_contact" />
+                android:id="@+id/local_search" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/search_on_wechat"
-                android:id="@+id/wechat_contact" />
+                android:id="@+id/wechat_search" />
 
         </LinearLayout>
 
@@ -105,13 +103,13 @@
                 android:layout_width="191dp"
                 android:layout_height="wrap_content"
                 android:text="@string/search_on_facebook"
-                android:id="@+id/facebook_contact" />
+                android:id="@+id/fb_search" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/search_on_google"
-                android:id="@+id/google_contact" />
+                android:id="@+id/google_search" />
         </LinearLayout>
     </LinearLayout>
 

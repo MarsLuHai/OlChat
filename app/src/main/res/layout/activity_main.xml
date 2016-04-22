@@ -58,12 +58,11 @@
                 android:outlineProvider="background"
                 android:textColor="@color/accent_material_light"
                 android:layout_marginTop="15dp"
-                android:id="@+id/signIn"
-                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
                 android:onClick="signIn" />
 
             <Button
-                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/signup_button"
@@ -72,7 +71,6 @@
                 android:outlineProvider="background"
                 android:textColor="@color/accent_material_light"
                 android:layout_marginTop="15dp"
-                android:id="@+id/signUp"
                 android:onClick="signUp" />
         </LinearLayout>
 
@@ -86,7 +84,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/login_wechat"
-                android:id="@+id/wechatLogin"
                 android:background="#00ffffff"
                 android:outlineProvider="background"
                 android:singleLine="true"
@@ -96,7 +93,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/login_facebook"
-                android:id="@+id/facebookLogin"
                 android:background="#00ffffff"
                 android:outlineProvider="background"
                 android:singleLine="true"
@@ -106,7 +102,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/login_google"
-                android:id="@+id/googleLogin"
                 android:background="#00ffffff"
                 android:outlineProvider="background"
                 android:singleLine="true"

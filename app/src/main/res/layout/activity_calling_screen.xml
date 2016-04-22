@@ -44,7 +44,6 @@
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:contentDescription="@string/picture_desc"
-        android:id="@+id/pictureCallContact"
         android:background="@android:drawable/sym_def_app_icon"
         android:layout_alignBottom="@+id/textCallCalling"
         android:layout_centerHorizontal="true"

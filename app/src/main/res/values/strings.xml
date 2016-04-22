@@ -1,24 +1,25 @@
 <resources>
     <string name="app_name">Ol\'Chat</string>
 
-    <string name="title_activity_signup">Sign Up</string>
-    <string name="title_activity_signin">Sign In</string>
-
     <string name="username_hint">Write your username here</string>
     <string name="password_hint">Write your password here</string>
     <string name="new_password_hint">Write your new password here</string>
 
     <string name="CONTACT_LIST">CONTACT LIST</string>
-    <string name="Search...">Search(…, &#8230;)</string>
     <string name="Add_contact">Add contact</string>
     <string name="call_button">CALL</string>
     <string name="message_button">TEXT</string>
     <string name="plus">plus</string>
     <string name="minus">minus</string>
     <string name="contact_image">contact_image</string>
+    <string name="Search...">Search&#8230;</string>
 
+    <string name="enter_phone_number">Enter phone number&#8230;</string>
+    <string name="enter_olchat_ID">Enter Ol\'Chat ID&#8230;</string>
 
     <string name="username">Username</string>
+
+    <string name="type_a_message">Type a message&#8230;</string>
 
     <string name="change_profile_picture">Change your profile picture</string>
     <string name="change_username">Click to change your Username</string>
@@ -27,7 +28,6 @@
     <string name="signup_button">Create an account here</string>
     <string name="password">Write your password</string>
     <string name="passwordAgain">Write your password again</string>
-    <string name="search">Search&#8230;</string>
     <string name="login_wechat">Wechat</string>
     <string name="login_facebook">Facebook</string>
     <string name="login_google">Google</string>
@@ -36,12 +36,16 @@
     <string name="video_call_button">VIDEO CALL</string>
     <string name="hang_up_button">HANG UP</string>
     <string name="picture_desc">Picture of the contact</string>
-    <string name="id_ol_apos_chat">ID Ol\'Chat</string>
+    <string name="id_ol_app_chat">Ol\'Chat ID</string>
     <string name="phone_number">Phone Number</string>
     <string name="search_on_phonebook">search on PhoneBook</string>
     <string name="search_on_wechat">Search on Wechat</string>
     <string name="search_on_google">Search on Google</string>
     <string name="search_on_facebook">Search on Facebook</string>
-    <string name="chatting_with">Chatting with</string>
+
+    <string name="plus_button">Plus button</string>
+    <string name="contact_picture">Contact picture</string>
+    <string name="minus_button">Minus button</string>
+    <string name="clear_button">Clear button</string>
 
 </resources>

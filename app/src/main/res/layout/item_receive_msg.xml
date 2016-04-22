@@ -11,6 +11,6 @@
         android:id="@+id/textListReceiveItem"
         android:background="#ff0000ff"
         android:textColor="#ffffffff"
-        android:layout_gravity="left"
+        android:layout_gravity="start"
         android:radius="5dp"/>
 </LinearLayout>

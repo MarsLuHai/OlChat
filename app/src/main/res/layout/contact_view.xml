@@ -10,7 +10,6 @@
         android:contentDescription="@string/contact_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/contact_image"
         android:minHeight="150dp"
         android:minWidth="150dp"
         android:nestedScrollingEnabled="true"
@@ -36,7 +35,6 @@
             android:minHeight="30dp"
             android:minWidth="75dp"
             android:background="@android:color/holo_green_dark"
-            android:id="@+id/message_button"
             android:onClick="textOnClick" />
     </LinearLayout>
 

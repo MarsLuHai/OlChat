@@ -53,8 +53,7 @@
                 android:outlineProvider="background"
                 android:textColor="@color/accent_material_light"
                 android:layout_marginTop="15dp"
-                android:id="@+id/signIn"
-                android:layout_marginEnd="5dp"
+            android:layout_marginEnd="5dp"
                 android:onClick="signUp"
                 android:layout_gravity="center_horizontal" />
 
