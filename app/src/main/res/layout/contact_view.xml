@@ -3,27 +3,29 @@
     android:id="@+id/contact"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:gravity="center">
 
     <ImageView
+        android:contentDescription="@string/contact_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/contact_image1"
+        android:id="@+id/contact_image"
         android:minHeight="150dp"
         android:minWidth="150dp"
         android:nestedScrollingEnabled="true"
         android:background="@color/colorPrimaryDark"/>
     <LinearLayout
         android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/call_button"
             android:id="@+id/call_button"
             android:minHeight="30dp"
-            android:minWidth="70dp"
+            android:minWidth="75dp"
             android:background="@android:color/holo_red_dark"
             android:onClick="callOnClick" />
 
@@ -32,9 +34,10 @@
             android:layout_height="wrap_content"
             android:text="@string/message_button"
             android:minHeight="30dp"
-            android:minWidth="70dp"
+            android:minWidth="75dp"
             android:background="@android:color/holo_green_dark"
             android:id="@+id/message_button"
             android:onClick="textOnClick" />
     </LinearLayout>
+
 </LinearLayout>

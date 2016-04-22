@@ -34,7 +34,6 @@ public class Contact_page extends AppCompatActivity {
         startActivity(i);
     }
 
-    //public void increaseOnClick(View view){
-    //    final Intent i =
-    //}
+    public void increaseOnClick(View view){
+    }
 }
