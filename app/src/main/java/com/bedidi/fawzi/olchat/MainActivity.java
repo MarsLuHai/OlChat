@@ -31,20 +31,20 @@ public class MainActivity extends AppCompatActivity {
 
     public void signIn(View view){
         final Intent intent = getIntent();
-        final String username = usernameEditText.getText().toString();
+        /*final String username = usernameEditText.getText().toString();
         final String password = passwordEditText.getText().toString();
         if (username.equalsIgnoreCase(intent.getStringExtra(SignUp.USERNAME_CREATED))
-                && password.equalsIgnoreCase(intent.getStringExtra(SignUp.PASSWORD_CREATED))){
+                && password.equalsIgnoreCase(intent.getStringExtra(SignUp.PASSWORD_CREATED))){*/
             Intent i=new Intent(MainActivity.this, Contact_page.class);
             startActivity(i);
-        }
+       /* }
         else {
             final Context context = getApplicationContext();
             final int duration = Toast.LENGTH_SHORT;
             CharSequence text = "incorrect username and or password";
             Toast toast = Toast.makeText(context, text, duration);
             toast.show();
-        }
+        }*/
     }
 
     public void signUp(View view){

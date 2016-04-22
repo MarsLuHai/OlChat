@@ -68,6 +68,13 @@
             android:layout_below="@+id/plus_button"
             android:layout_toEndOf="@+id/search_bar"
             android:onClick="addContactOnClick" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Button"
+            android:id="@+id/button"
+            android:onClick="textOnClick" />
     </LinearLayout>
 
     <GridView

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.bedidi.fawzi.olchat.Contact_page">
+
+    <ImageButton
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/plus_button"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_add_circle_outline_black_24dp" />
+
+    <ImageButton
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/minus_button"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/plus_button"
+        android:src="@drawable/ic_remove_circle_outline_black_24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/CONTACT_LIST"
+        android:id="@+id/contact_list_header"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_bar"
+        android:layout_below="@+id/minus_button"
+        android:layout_alignParentStart="true"
+        android:text="@string/Search..."
+        android:layout_toStartOf="@+id/minus_button"
+        android:textStyle="italic" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Add_contact"
+        android:id="@+id/add_contact_button"
+        android:layout_below="@+id/plus_button"
+        android:layout_toEndOf="@+id/search_bar" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:minHeight="150dp"
+        android:minWidth="150dp"
+        android:nestedScrollingEnabled="true"
+        android:background="@color/colorPrimaryDark"
+        android:layout_below="@+id/add_contact_button"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/call_button"
+        android:id="@+id/call_button"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentStart="true"
+        android:minHeight="30dp"
+        android:minWidth="70dp"
+        android:background="@android:color/holo_red_dark"
+        android:onClick="callContact"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/message_button"
+        android:minHeight="30dp"
+        android:minWidth="70dp"
+        android:layout_alignTop="@+id/call_button"
+        android:layout_alignEnd="@+id/imageView2"
+        android:background="@android:color/holo_green_dark"
+        android:id="@+id/message_button" />
+
+</RelativeLayout>

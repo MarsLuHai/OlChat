@@ -19,7 +19,12 @@ public class Contact_page extends AppCompatActivity {
         gridView.setAdapter(new ImageAdapter(this));
     }
 
-    public void addContactOnClick(View view){
+    public void textOnClick(View view){
+        final Intent i = new Intent(Contact_page.this, Messaging_page.class);
+        startActivity(i);
+    }
+
+    /*public void addContactOnClick(View view){
         final Intent i = new Intent(Contact_page.this, Add_contact.class);
             startActivity(i);
     }
@@ -27,12 +32,7 @@ public class Contact_page extends AppCompatActivity {
     public void callOnClick(View view){
         final Intent i = new Intent(Contact_page.this, Calling_Screen.class);
         startActivity(i);
-    }
-
-    public void textOnClick(View view){
-        final Intent i = new Intent(Contact_page.this, Messaging_page.class);
-        startActivity(i);
-    }
+    }*/
 
     //public void increaseOnClick(View view){
     //    final Intent i =
