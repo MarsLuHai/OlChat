@@ -15,7 +15,7 @@
     <string name="Search...">Search&#8230;</string>
 
     <string name="enter_phone_number">Enter phone number&#8230;</string>
-    <string name="enter_olchat_ID">Enter Ol\'Chat ID&#8230;</string>
+    <string name="enter_olchat_username">Enter Ol\'Chat Username&#8230;</string>
 
     <string name="username">Username</string>
 
@@ -36,7 +36,7 @@
     <string name="video_call_button">VIDEO CALL</string>
     <string name="hang_up_button">HANG UP</string>
     <string name="picture_desc">Picture of the contact</string>
-    <string name="id_ol_app_chat">Ol\'Chat ID</string>
+    <string name="username_ol_app_chat">Ol\'Chat Usernams</string>
     <string name="phone_number">Phone Number</string>
     <string name="search_on_phonebook">search on PhoneBook</string>
     <string name="search_on_wechat">Search on Wechat</string>

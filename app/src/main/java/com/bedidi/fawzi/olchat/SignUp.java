@@ -8,11 +8,18 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.bedidi.fawzi.olchat.database.UserDatabase;
+
+import io.realm.Realm;
+import io.realm.RealmConfiguration;
+import io.realm.RealmObject;
+
 public class SignUp extends AppCompatActivity {
 
     private EditText usernameEditText;
     private EditText passwordEditText;
     private EditText password2EditText;
+    private Realm realm;
 
     private final static String USERNAME_CREATED = "com.bedidi.fawzi.olchat.USERNAME";
     private final static String PASSWORD_CREATED = "com.bedidi.fawzi.olchat.USERNAME";
@@ -27,15 +34,26 @@ public class SignUp extends AppCompatActivity {
         passwordEditText = (EditText) findViewById(R.id.password);
         password2EditText = (EditText) findViewById(R.id.password2);
         usernameEditText.setText(message);
+        RealmConfiguration realmConfiguration = new RealmConfiguration.Builder(this)
+                .deleteRealmIfMigrationNeeded()
+                .build();
+        Realm.setDefaultConfiguration(realmConfiguration);
+        realm = Realm.getDefaultInstance();
     }
 
-    public void signUp(){
+    public void signUp(View view){
         final Intent i = new Intent(SignUp.this, MainActivity.class);
         if (usernameEditText.getText().length() >= 1
                 && password2EditText.getText().toString().equalsIgnoreCase(passwordEditText.getText().toString())
                 && passwordEditText != null) {
             i.putExtra(USERNAME_CREATED, usernameEditText.getText().toString());
             i.putExtra(PASSWORD_CREATED, passwordEditText.getText().toString());
+            realm.beginTransaction();
+            UserDatabase user = realm.createObject(UserDatabase.class);
+            user.setUsername(usernameEditText.getText().toString());
+            user.setPassword(passwordEditText.getText().toString());
+            realm.copyToRealm(user);
+            realm.commitTransaction();
             startActivity(i);
         }
         else {
@@ -57,6 +75,4 @@ public class SignUp extends AppCompatActivity {
         }
     }
 
-    public void signUp(View view) {
-    }
 }

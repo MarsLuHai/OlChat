@@ -1,15 +1,11 @@
 package com.bedidi.fawzi.olchat;
 
 import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
-import android.widget.ImageButton;
-import android.widget.ImageView;
-import android.widget.TextClock;
 import android.widget.TextView;
 
 import com.bedidi.fawzi.olchat.database.ContactsDatabase;
@@ -24,34 +20,27 @@ import io.realm.Realm;
 import io.realm.RealmConfiguration;
 import io.realm.RealmResults;
 
-class ImageAdapter extends BaseAdapter {
+public class AddContactAdapter extends BaseAdapter{
     private Context mContext;
     private Realm realm;
 
-    private String[] mThumbIds = {};
+    public String[] mThumbIds = {};
 
     // Constructor
-    public ImageAdapter(Context c, String username){
+    public AddContactAdapter(Context c, String username){
         mContext = c;
         RealmConfiguration realmConfiguration = new RealmConfiguration.Builder(c)
                 .deleteRealmIfMigrationNeeded()
                 .build();
         Realm.setDefaultConfiguration(realmConfiguration);
         realm = Realm.getDefaultInstance();
-        RealmResults<ContactsDatabase> result2 = realm.where(ContactsDatabase.class)
-                .equalTo("userOne", username)
-                .or()
-                .equalTo("userTwo", username)
+        RealmResults<UserDatabase> result2 = realm.where(UserDatabase.class)
+                .contains("username", username)
                 .findAll();
         List<String> list = new ArrayList();
-        for (ContactsDatabase contactsDatabase: result2) {
-            if (contactsDatabase.getUserOne() != null && contactsDatabase.getUserOne().equals(username)) {
-                list.add(contactsDatabase.getUserTwo());
+        for (UserDatabase userDatabase: result2) {
+                list.add(userDatabase.getUsername());
             }
-            else if (contactsDatabase.getUserTwo().equals(username)) {
-                list.add(contactsDatabase.getUserOne());
-            }
-        }
         mThumbIds = list.toArray(new String[list.size()]);
     }
 
@@ -73,15 +62,17 @@ class ImageAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         LayoutInflater inflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View gridView;
+        View listView;
 
-        gridView = new View(mContext);
-        gridView = inflater.inflate(R.layout.contact_view, null);
-        TextView textView = (TextView) gridView.findViewById(R.id.contactName);
-        textView.setText(mThumbIds[position]);
-        Button button2;
-        button2 = (Button) gridView.findViewById(R.id.send_text);
-        button2.setText(mThumbIds[position]);
-        return gridView.findViewById(R.id.contact);
+        listView = new View(mContext);
+        listView = inflater.inflate(R.layout.add_contact_adapter, null);
+        Button button = (Button) listView.findViewById(R.id.add_user);
+        button.setText(mThumbIds[position]);
+        return listView.findViewById(R.id.contact_to_add);
+    }
+
+    @Override
+    public void notifyDataSetChanged(){
+
     }
 }

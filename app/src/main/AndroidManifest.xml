@@ -20,7 +20,7 @@
         <activity android:name=".ProfilPage" />
         <activity android:name=".Calling_Screen" />
         <activity android:name=".Calling_Video_Screen" />
-        <activity android:name=".add_contact" />
+        <activity android:name=".Add_contact" />
         <activity android:name=".Messaging_page" />
         <activity android:name=".Settings" >
         </activity>
